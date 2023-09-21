@@ -17,6 +17,17 @@ def run_command(command):
     else:
         raise RuntimeError(f"Error executing command: {result.stderr.strip()}")
 
+mde_teams_ns = [
+    "aaa"
+    "aaa"
+]
+
+
+'''
+$ kubectl get deployment aaa -o yaml | yq eval '.metadata.annotations."meta.helm.sh/release-name"' -
+aaa-release
+from mde.mde_eleases import releases as mde_releases
+'''
 
 
 def get_namepased_releases(namespace:str):
